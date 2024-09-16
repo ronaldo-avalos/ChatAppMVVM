@@ -9,23 +9,25 @@
 /* Begin PBXBuildFile section */
 		D30E99FD2C98C5D7000C76E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30E99FC2C98C5D7000C76E3 /* AppDelegate.swift */; };
 		D30E99FF2C98C5D7000C76E3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30E99FE2C98C5D7000C76E3 /* SceneDelegate.swift */; };
-		D30E9A012C98C5D7000C76E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30E9A002C98C5D7000C76E3 /* ViewController.swift */; };
+		D30E9A012C98C5D7000C76E3 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30E9A002C98C5D7000C76E3 /* ChatView.swift */; };
 		D30E9A042C98C5D7000C76E3 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = D30E9A032C98C5D7000C76E3 /* Base */; };
 		D30E9A072C98C5D7000C76E3 /* ChatAppMVVM.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D30E9A052C98C5D7000C76E3 /* ChatAppMVVM.xcdatamodeld */; };
 		D30E9A092C98C5D8000C76E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D30E9A082C98C5D8000C76E3 /* Assets.xcassets */; };
 		D30E9A0C2C98C5D9000C76E3 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = D30E9A0B2C98C5D9000C76E3 /* Base */; };
+		D30E9A142C98C5FB000C76E3 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30E9A132C98C5FB000C76E3 /* ChatViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D30E99F92C98C5D7000C76E3 /* ChatAppMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatAppMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D30E99FC2C98C5D7000C76E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D30E99FE2C98C5D7000C76E3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D30E9A002C98C5D7000C76E3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D30E9A002C98C5D7000C76E3 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		D30E9A032C98C5D7000C76E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D30E9A062C98C5D7000C76E3 /* ChatAppMVVM.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ChatAppMVVM.xcdatamodel; sourceTree = "<group>"; };
 		D30E9A082C98C5D8000C76E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D30E9A0B2C98C5D9000C76E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D30E9A0D2C98C5D9000C76E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D30E9A132C98C5FB000C76E3 /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,12 +62,13 @@
 			children = (
 				D30E99FC2C98C5D7000C76E3 /* AppDelegate.swift */,
 				D30E99FE2C98C5D7000C76E3 /* SceneDelegate.swift */,
-				D30E9A002C98C5D7000C76E3 /* ViewController.swift */,
+				D30E9A002C98C5D7000C76E3 /* ChatView.swift */,
 				D30E9A022C98C5D7000C76E3 /* Main.storyboard */,
 				D30E9A082C98C5D8000C76E3 /* Assets.xcassets */,
 				D30E9A0A2C98C5D9000C76E3 /* LaunchScreen.storyboard */,
 				D30E9A0D2C98C5D9000C76E3 /* Info.plist */,
 				D30E9A052C98C5D7000C76E3 /* ChatAppMVVM.xcdatamodeld */,
+				D30E9A132C98C5FB000C76E3 /* ChatViewModel.swift */,
 			);
 			path = ChatAppMVVM;
 			sourceTree = "<group>";
@@ -141,9 +144,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D30E9A012C98C5D7000C76E3 /* ViewController.swift in Sources */,
+				D30E9A012C98C5D7000C76E3 /* ChatView.swift in Sources */,
 				D30E99FD2C98C5D7000C76E3 /* AppDelegate.swift in Sources */,
 				D30E99FF2C98C5D7000C76E3 /* SceneDelegate.swift in Sources */,
+				D30E9A142C98C5FB000C76E3 /* ChatViewModel.swift in Sources */,
 				D30E9A072C98C5D7000C76E3 /* ChatAppMVVM.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
